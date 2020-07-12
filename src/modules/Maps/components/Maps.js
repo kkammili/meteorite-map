@@ -142,8 +142,8 @@ export function GoogleMapsComp ({fetchMeteoriteData, bounds, fetchLatLng}) {
                                 <tr>
                                     <td>Mass:</td>
                                     <td>{
-                                        selectedMarker &&
-                      selectedMarker.mass.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')} gms
+                                        selectedMarker && selectedMarker.mass &&
+                                        selectedMarker.mass.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')} gms
                                     </td>
                                 </tr>
                             </tbody>

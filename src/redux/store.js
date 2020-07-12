@@ -1,7 +1,7 @@
 import {Map} from 'immutable'
 import {applyMiddleware, createStore, compose} from 'redux'
 import thunk from 'redux-thunk'
-import {routerMiddleware} from 'react-router-redux'
+// import {routerMiddleware} from 'react-router-redux'
 // import createHistory from 'history/createBrowserHistory'
 import reducer from './reducer'
 import logger from 'redux-logger'
