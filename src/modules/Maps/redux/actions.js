@@ -1,7 +1,14 @@
 import axios from 'axios'
 export const fetchMeteoriteData = () => {
-  return (dispatch) => axios.get(
-    'https://data.nasa.gov/resource/gh4g-9sfh.json'
+  return (dispatch) => axios({
+        url:"https://data.nasa.gov/resource/gh4g-9sfh.json",
+        method:'get',
+        params: {
+          "$limit" : 10000,
+          "$$app_token" : "7PYvdjcUgmEHCM3YswyERWPFA"
+
+        }
+      }
   ).then(res => {
     return dispatch({
       type: 'fetchMeteoriteDataSuccess',
