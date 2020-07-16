@@ -4,7 +4,7 @@ export const fetchMeteoriteData = () => {
         url:"https://data.nasa.gov/resource/gh4g-9sfh.json",
         method:'get',
         params: {
-          "$limit" : 5000,
+          "$limit" : 2000,
           "$$app_token" : "7PYvdjcUgmEHCM3YswyERWPFA"
 
         }
